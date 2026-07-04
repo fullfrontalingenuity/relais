@@ -1,0 +1,7 @@
+---
+pid: 27440
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "Get-ChildItem -Path \"C:\\Program Files\\nodejs\",\"C:\\Users\\PaulTalbot\\AppData\\Roaming\\nvm\" -ErrorAction SilentlyContinue -Recurse -Filter node.exe | Select-Object -First 3 FullName"
+started_at: 2026-07-03T17:59:51.739Z
+running_for_ms: 5230009  
+---

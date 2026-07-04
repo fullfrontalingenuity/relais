@@ -1,0 +1,101 @@
+---
+pid: 18004
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "wsl -e bash -lc \"cd /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai && devbox run setup\""
+started_at: 2026-07-03T19:37:16.860Z
+running_for_ms: 750009   
+---
+Info: Running script "setup" on /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai
+Info: Ensuring packages are installed.
+→ Caravanserai devbox ready
+  devbox run setup   — install gems
+  devbox run serve   — start tablet menu
+→ Caravanserai setup
+  Ruby:    ruby 3.3.10 (2025-10-23 revision 343ea05002) [x86_64-linux]
+  Bundler: 4.0.15
+You are replacing the current local value of path, which is currently "vendor/bundle"
+Writing lockfile to /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai/Gemfile.lock
+Fetching gem metadata from https://rubygems.org/.
+Updating bundler to 4.0.15.
+Fetching bundler 4.0.15
+Installing bundler 4.0.15
+Fetching gem metadata from https://rubygems.org/.
+Fetching gem metadata from https://rubygems.org/..........
+Resolving dependencies...
+Fetching rake 13.4.2
+Installing rake 13.4.2
+Fetching colorator 1.1.0
+Fetching csv 3.3.5
+Fetching eventmachine 1.2.7
+Fetching public_suffix 7.0.5
+Fetching addressable 2.9.0
+Fetching concurrent-ruby 1.3.7
+Fetching bigdecimal 4.1.2
+Fetching base64 0.3.0
+Fetching ffi 1.17.4 (x86_64-linux-gnu)
+Fetching http_parser.rb 0.8.1
+Fetching forwardable-extended 2.6.0
+Fetching google-protobuf 4.35.1 (x86_64-linux-gnu)
+Fetching i18n 1.15.2
+Fetching em-websocket 0.5.3
+Fetching sass-embedded 1.101.0 (x86_64-linux-gnu)
+Fetching jekyll-sass-converter 3.1.0
+Fetching logger 1.7.0
+Fetching rb-fsevent 0.11.2
+Fetching rb-inotify 0.11.1
+Fetching listen 3.10.0
+Installing bigdecimal 4.1.2 with native extensions
+Fetching jekyll-watch 2.2.1
+Fetching json 2.20.0
+Installing http_parser.rb 0.8.1 with native extensions
+Fetching rexml 3.4.4
+Fetching kramdown 2.5.2
+Fetching kramdown-parser-gfm 1.1.0
+Installing eventmachine 1.2.7 with native extensions
+Fetching liquid 4.0.4
+Fetching mercenary 0.4.0
+Fetching pathutil 0.16.2
+Fetching rouge 4.7.0
+Fetching safe_yaml 1.0.5
+Fetching unicode-display_width 2.6.0
+Fetching terminal-table 3.0.2
+Installing json 2.20.0 with native extensions
+Fetching webrick 1.9.2
+Fetching jekyll 4.4.1
+Fetching jekyll-feed 0.17.0
+Installing colorator 1.1.0
+Installing csv 3.3.5
+Installing forwardable-extended 2.6.0
+Installing addressable 2.9.0
+Installing base64 0.3.0
+Installing concurrent-ruby 1.3.7
+Installing ffi 1.17.4 (x86_64-linux-gnu)
+Installing i18n 1.15.2
+Installing em-websocket 0.5.3
+Installing public_suffix 7.0.5
+Installing google-protobuf 4.35.1 (x86_64-linux-gnu)
+Installing jekyll-sass-converter 3.1.0
+Installing logger 1.7.0
+Installing rb-fsevent 0.11.2
+Installing rb-inotify 0.11.1
+Installing listen 3.10.0
+Installing jekyll-watch 2.2.1
+Installing rexml 3.4.4
+Installing kramdown 2.5.2
+Installing kramdown-parser-gfm 1.1.0
+Installing liquid 4.0.4
+Installing mercenary 0.4.0
+Installing pathutil 0.16.2
+Installing safe_yaml 1.0.5
+Installing unicode-display_width 2.6.0
+Installing sass-embedded 1.101.0 (x86_64-linux-gnu)
+Installing terminal-table 3.0.2
+Installing rouge 4.7.0
+Installing webrick 1.9.2
+Installing jekyll-feed 0.17.0
+Installing jekyll 4.4.1
+Bundle updated!
+Bundle complete! 4 Gemfile dependencies, 36 gems now installed.
+Bundled gems are installed into `./vendor/bundle-linux`
+
+✓ Setup complete. Run: devbox run serve

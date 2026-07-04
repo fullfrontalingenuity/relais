@@ -1,0 +1,8 @@
+---
+pid: 35028
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "Get-ChildItem -Path \"C:\\Users\\PaulTalbot\\AppData\\Local\\Programs\\Python\",\"C:\\Python*\",\"C:\\Program Files\\Python*\" -ErrorAction SilentlyContinue -Recurse -Filter python.exe | Select-Object -First 5 FullName"
+started_at: 2026-07-03T17:59:51.739Z
+running_for_ms: 5230009  
+---
+

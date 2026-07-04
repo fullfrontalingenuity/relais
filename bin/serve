@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if command -v devbox >/dev/null 2>&1; then
+  exec devbox run serve "$@"
+fi
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+export PATH="${HOME}/.local/share/gem/ruby/$(ruby -e 'print RUBY_VERSION' 2>/dev/null || echo 0)/bin:${PATH}"
+
+if [[ ! -d vendor/bundle ]] && ! bundle check >/dev/null 2>&1; then
+  echo "→ Dependencies missing. Running setup first..."
+  "$ROOT/bin/setup"
+fi
+
+HOST="${JEKYLL_HOST:-0.0.0.0}"
+PORT="${JEKYLL_PORT:-4000}"
+LAN_IP="$(hostname -I 2>/dev/null | awk '{print $1}' || true)"
+
+echo "→ Starting Relais menu server"
+echo "  Local:   http://localhost:${PORT}"
+if [[ -n "$LAN_IP" ]]; then
+  echo "  Tablet:  http://${LAN_IP}:${PORT}"
+fi
+echo "  Press Ctrl+C to stop"
+echo ""
+
+bundle exec jekyll serve --host "$HOST" --port "$PORT" --livereload

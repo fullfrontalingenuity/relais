@@ -1,0 +1,14 @@
+{% assign active = site.data.days | where: "slug", include.active_day | first %}
+{% if active and active.next %}
+<section class="menu-teaser">
+  <div class="menu-teaser__header">
+    <p class="menu-teaser__eyebrow">PREVIEW</p>
+    <h2 class="menu-teaser__title">{{ active.next_label }}</h2>
+    <p class="menu-teaser__lede">A taste of what's ahead</p>
+  </div>
+  <div class="menu-teaser__body">
+    {% assign teaser_prefix = active.next | append: "-teaser" %}
+    {% include menu-render.html day=active.next id_prefix=teaser_prefix skip_marche=true skip_entrees=true skip_tax_note=true %}
+  </div>
+</section>
+{% endif %}

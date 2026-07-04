@@ -1,0 +1,8 @@
+<td>
+  <span class="menu-item__name-line">
+    <span class="menu-item__name">{{ include.name | remove: "*" | strip }}</span>{% if include.vegetarian %} {% include menu-item-vegetarian-badge.html %}{% endif %}
+  </span>
+  {% if include.description %}
+  <span class="menu-item__description">{{ include.description }}</span>
+  {% endif %}
+</td>

@@ -1,0 +1,15 @@
+<tr{% capture item_classes %}{% if include.item.eighty_sixed %} menu-item--eighty-sixed{% endif %}{% if include.item.featured %} menu-item--featured{% endif %}{% endcapture %}{% assign item_classes = item_classes | strip %}{% if item_classes != "" %} class="{{ item_classes }}"{% endif %}>
+  <td colspan="2" class="menu-item__shell">
+    <div class="menu-item__grid">
+      <div class="menu-item__detail">
+        <span class="menu-item__name-line">
+          <span class="menu-item__name">{{ include.item.name | remove: "*" | strip }}</span>{% if include.item.vegetarian %} {% include menu-item-vegetarian-badge.html %}{% endif %}
+        </span>
+        {% if include.item.description %}
+        <span class="menu-item__description">{{ include.item.description }}</span>
+        {% endif %}
+      </div>
+      <span class="menu-item__price{% if include.item.eighty_sixed %} menu-item__price--eighty-sixed{% endif %}">{{ include.item.price }}</span>
+    </div>
+  </td>
+</tr>

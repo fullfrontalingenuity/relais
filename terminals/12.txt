@@ -1,0 +1,11 @@
+---
+pid: 41428
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "wsl -e bash -lc \"cd /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai && devbox run -- bundle exec jekyll build 2>&1 | tail -4\""
+started_at: 2026-07-03T15:21:02.691Z
+running_for_ms: 14760002 
+---
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 1.621 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

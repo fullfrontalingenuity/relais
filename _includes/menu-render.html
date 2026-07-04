@@ -1,0 +1,73 @@
+{% assign menu = site.data.menus[include.day] %}
+{% assign marche = site.data.marche %}
+{% assign entrees = site.data.entrees %}
+{% assign id_prefix = include.id_prefix | default: "" %}
+{% if id_prefix != "" %}
+  {% assign id_prefix = id_prefix | append: "-" %}
+{% endif %}
+{% unless menu %}
+  <p>Menu not found for <strong>{{ include.day }}</strong>.</p>
+{% else %}
+
+{% unless include.skip_marche %}
+<h3 id="{{ id_prefix }}marche"><span class="menu-section__title">{{ marche.title }}</span></h3>
+
+{% include menu-marche-columns.html marche=marche %}
+
+<hr>
+{% endunless %}
+
+<h3 id="{{ id_prefix }}verdure"><span class="menu-section__title">{{ menu.verdure.title }}</span></h3>
+
+<table>
+  <thead>
+    <tr><th>Item</th><th>Price</th></tr>
+  </thead>
+  <tbody>
+    {% for item in menu.verdure.items %}
+    {% include menu-item-row.html item=item %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<p><strong>House-made dressings:</strong> {{ menu.verdure.dressings }}</p>
+
+<hr>
+
+<h3 id="{{ id_prefix }}potages"><span class="menu-section__title">{{ menu.potages.title }}</span></h3>
+
+<table>
+  <thead>
+    <tr><th>Item</th><th>Price</th></tr>
+  </thead>
+  <tbody>
+    {% for item in menu.potages.items %}
+    {% include menu-item-row.html item=item %}
+    {% endfor %}
+  </tbody>
+</table>
+
+{% unless include.skip_entrees %}
+<hr>
+
+<h3 id="{{ id_prefix }}entrees"><span class="menu-section__title">{{ entrees.title }}</span></h3>
+
+<table>
+  <thead>
+    <tr><th>Item</th><th>Price</th></tr>
+  </thead>
+  <tbody>
+    {% for item in entrees.items %}
+    {% include menu-item-row.html item=item %}
+    {% endfor %}
+  </tbody>
+</table>
+{% endunless %}
+
+{% unless include.skip_tax_note %}
+<hr>
+
+<p><strong>{{ menu.tax_note }}</strong></p>
+{% endunless %}
+
+{% endunless %}

@@ -1,0 +1,46 @@
+{
+  "packages": {
+    "ruby": "3.3",
+    "bundler": "latest",
+    "libffi": "latest",
+    "zlib": "latest",
+    "pkg-config": "latest"
+  },
+  "shell": {
+    "init_hook": [
+      "export BUNDLE_PATH=\"$PWD/vendor/bundle-linux\"",
+      "echo '→ Relais devbox ready'",
+      "echo '  devbox run setup   — install gems'",
+      "echo '  devbox run serve   — start tablet menu'"
+    ],
+    "scripts": {
+      "setup": [
+        "echo '→ Relais setup'",
+        "echo '  Ruby:    '$(ruby --version)",
+        "echo '  Bundler: '$(bundle --version)",
+
+        "if ls vendor/bundle/ruby/*/specifications/*mingw* vendor/bundle/ruby/*/specifications/*mswin* 2>/dev/null | grep -q .; then",
+        "  echo '→ Removing stale Windows gems from shared vendor/bundle path...'",
+        "  rm -rf vendor/bundle",
+        "fi",
+        "bundle lock --add-platform x86_64-linux",
+        "bundle update --bundler",
+        "bundle install",
+        "echo ''",
+        "echo '✓ Setup complete. Run: devbox run serve'"
+      ],
+      "serve": [
+        "if ! bundle exec ruby -e \"require 'json'; require 'jekyll'\" >/dev/null 2>&1; then echo '→ Gems missing or wrong platform, running setup...'; devbox run setup; fi",
+        "HOST=${JEKYLL_HOST:-0.0.0.0}",
+        "PORT=${JEKYLL_PORT:-4000}",
+        "LAN_IP=$(hostname -I 2>/dev/null | awk '{print $1}')",
+        "echo '→ Starting Relais menu server'",
+        "echo '  Local:   http://localhost:'${PORT}",
+        "if [ -n \"$LAN_IP\" ]; then echo '  Tablet:  http://'${LAN_IP}:${PORT}; fi",
+        "echo '  Press Ctrl+C to stop'",
+        "echo ''",
+        "bundle exec jekyll serve --host ${HOST} --port ${PORT} --livereload --incremental"
+      ]
+    }
+  }
+}

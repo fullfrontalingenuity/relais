@@ -1,0 +1,15 @@
+---
+pid: 31640
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "wsl -e bash -lc \"cd /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai && devbox run -- bash -lc 'bundle exec jekyll build 2>&1 | tail -3'\""
+started_at: 2026-07-04T13:15:19.341Z
+running_for_ms: 30004    
+---
+Info: Running script "bash" on /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai
+Info: Ensuring packages are installed.
+→ Relais devbox ready
+  devbox run setup   — install gems
+  devbox run serve   — start tablet menu
+       Jekyll Feed: Generating feed for posts
+                    done in 1.684 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

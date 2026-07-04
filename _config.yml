@@ -1,0 +1,43 @@
+title: Relais
+description: EST. 2026
+baseurl: ""
+url: ""
+lang: en
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .devbox
+  - README.md
+  - markdown.txt
+  - terminals
+  - devbox.json
+  - devbox.lock
+  - bin
+  - .gitignore
+
+# Stop livereload rebuilding when tooling files change
+watch_exclude:
+  - ".devbox/**"
+  - "vendor/**"
+  - "bin/**"
+  - "terminals/**"
+  - ".bundle/**"
+  - ".jekyll-cache/**"
+  - "_site/**"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "devbox.json"
+  - "devbox.lock"
+  - "markdown.txt"

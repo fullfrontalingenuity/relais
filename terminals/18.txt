@@ -1,0 +1,16 @@
+---
+pid: 14872
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "wsl -e bash -lc \"cd /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai && timeout 15 devbox run serve 2>&1 || true\""
+started_at: 2026-07-03T19:34:38.250Z
+running_for_ms: 910004   
+---
+Info: Running script "serve" on /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai
+→ Caravanserai devbox ready
+  devbox run setup   — install gems
+  devbox run serve   — start tablet menu
+→ Starting Caravanserai menu server
+  Local:   http://localhost:4000
+  Tablet:  http://172.22.38.175:4000
+  Press Ctrl+C to stop
+

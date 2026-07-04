@@ -1,0 +1,28 @@
+---
+pid: 28416
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "$env:Path = [System.Environment]::GetEnvironmentVariable(\"Path\",\"Machine\") + \";\" + [System.Environment]::GetEnvironmentVariable(\"Path\",\"User\"); Set-Location \"C:\\Users\\PaulTalbot\\Documents\\sandbox\\caravanserai\"; bundle install 2>&1"
+started_at: 2026-07-03T19:22:56.915Z
+running_for_ms: 245005   
+---
+[DEPRECATED] Platform :mingw, :x64_mingw, :mswin will be removed in the future. Please use platform :windows instead.
+Fetching gem metadata from https://rubygems.org/..........
+Source rubygems repository https://rubygems.org/ or installed locally is ignoring #<Bundler::StubSpecification name=json version=2.20.0 platform=ruby> because it is missing extensions
+Source rubygems repository https://rubygems.org/ or installed locally is ignoring #<Bundler::StubSpecification name=http_parser.rb version=0.8.1 platform=ruby> because it is missing extensions
+Source rubygems repository https://rubygems.org/ or installed locally is ignoring #<Bundler::StubSpecification name=eventmachine version=1.2.7 platform=ruby> because it is missing extensions
+Source rubygems repository https://rubygems.org/ or installed locally is ignoring #<Bundler::StubSpecification name=bigdecimal version=4.1.2 platform=ruby> because it is missing extensions
+Resolving dependencies...
+Fetching ffi 1.17.4 (x64-mingw-ucrt)
+Fetching google-protobuf 4.35.1 (x64-mingw-ucrt)
+Fetching sass-embedded 1.101.0 (x64-mingw-ucrt)
+Fetching wdm 0.2.0
+Installing bigdecimal 4.1.2 with native extensions
+Installing json 2.20.0 with native extensions
+Installing http_parser.rb 0.8.1 with native extensions
+Installing eventmachine 1.2.7 with native extensions
+Installing ffi 1.17.4 (x64-mingw-ucrt)
+Installing wdm 0.2.0 with native extensions
+Installing google-protobuf 4.35.1 (x64-mingw-ucrt)
+Installing sass-embedded 1.101.0 (x64-mingw-ucrt)
+Bundle complete! 4 Gemfile dependencies, 37 gems now installed.
+Bundled gems are installed into `./vendor/bundle`

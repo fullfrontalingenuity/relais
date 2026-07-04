@@ -1,0 +1,19 @@
+---
+pid: 13088
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "wsl -e bash -lc \"cd /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai && devbox run -- bash -lc 'bundle exec jekyll build 2>&1 | tail -8'\""
+started_at: 2026-07-03T20:18:11.637Z
+running_for_ms: 61065013 
+---
+Info: Running script "bash" on /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai
+→ Caravanserai devbox ready
+  devbox run setup   — install gems
+  devbox run serve   — start tablet menu
+Configuration file: /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai/_config.yml
+            Source: /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai
+       Destination: /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 2.291 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  {% include head.html %}
+</head>
+<body class="menu-body{% if page.today_view %} menu-body--today{% endif %}">
+  <div class="ambient-glow ambient-glow--left" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--right" aria-hidden="true"></div>
+  <div class="pattern-overlay" aria-hidden="true"></div>
+
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <div class="brand-text">
+        <h1 class="brand-title">{{ site.title }}</h1>
+        <p class="brand-tagline">{{ site.description }}</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="section-nav" aria-label="Days of the week">
+    <ul class="section-nav__list">
+      {% for day in site.data.days %}
+      <li>
+        <a href="{{ '/' | append: day.slug | append: '/' | relative_url }}"
+           class="section-nav__link"
+           data-day="{{ day.slug }}">
+          {{ day.label }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <main class="menu-main" role="main">
+    <div class="menu-content">
+      {% if page.today_view %}
+        <div class="menu-today" data-reset-ms="30000">
+          {% for day in site.data.days %}
+          <div class="menu-day-panel" data-day="{{ day.slug }}" hidden>
+            {% include menu-render.html day=day.slug id_prefix=day.slug %}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="menu-teaser-stack" id="menu-teaser-stack" hidden>
+          {% for day in site.data.days %}
+          <div class="menu-teaser-panel" data-for-day="{{ day.slug }}" hidden>
+            {% include menu-teaser.html active_day=day.slug %}
+          </div>
+          {% endfor %}
+        </div>
+      {% elsif page.day %}
+        {% include menu-render.html day=page.day %}
+        {% include menu-teaser.html active_day=page.day %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p class="footer-ornament" aria-hidden="true">✦ ✦ ✦</p>
+    <p class="footer-note">Today's lunch journey ends here — safe travels.</p>
+  </footer>
+
+  <script src="{{ '/assets/js/menu.js' | relative_url }}" defer></script>
+</body>
+</html>

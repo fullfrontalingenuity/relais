@@ -1,0 +1,14 @@
+---
+pid: 41444
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "winget install Python.Python.3.12 --accept-package-agreements --accept-source-agreements 2>&1"
+started_at: 2026-07-03T18:00:25.539Z
+running_for_ms: 5195013  
+---
+Found Python 3.12 [Python.Python.3.12] Version 3.12.10
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe
+Successfully verified installer hash
+Starting package install...
+Successfully installed

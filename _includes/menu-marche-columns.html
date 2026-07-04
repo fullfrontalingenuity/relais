@@ -1,0 +1,26 @@
+<div class="menu-marche-columns">
+  <div class="menu-marche-column menu-marche-column--drinks">
+    <table class="menu-table menu-table--marche-column">
+      <thead>
+        <tr><th>Item</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        {% for item in include.marche.drinks | sort: "name" %}
+        {% include menu-item-row.html item=item %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="menu-marche-column menu-marche-column--food">
+    <table class="menu-table menu-table--marche-column">
+      <thead>
+        <tr><th>Item</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        {% for item in include.marche.food | sort: "name" %}
+        {% include menu-item-row.html item=item %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

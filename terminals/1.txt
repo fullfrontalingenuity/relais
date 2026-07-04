@@ -1,0 +1,14 @@
+---
+pid: 36124
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "winget install RubyInstallerTeam.RubyWithDevKit.3.3 --accept-package-agreements --accept-source-agreements --silent"
+started_at: 2026-07-03T13:24:38.236Z
+running_for_ms: 21744997 
+---
+Found Ruby 3.3 with MSYS2 [RubyInstallerTeam.RubyWithDevKit.3.3] Version 3.3.11-1
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.3.11-1/rubyinstaller-devkit-3.3.11-1-x64.exe
+Successfully verified installer hash
+Starting package install...
+Successfully installed

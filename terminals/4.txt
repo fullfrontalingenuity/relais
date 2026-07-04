@@ -1,0 +1,10 @@
+---
+pid: 26480
+cwd: "C:\Users\PaulTalbot\Documents\sandbox\caravanserai"
+command: "wsl -e bash -lc \"cd /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai && chmod +x bin/setup bin/serve && ./bin/setup\""
+started_at: 2026-07-03T13:33:07.387Z
+running_for_ms: 21235004 
+---
+→ Caravanserai setup (WSL/Linux)
+  Project: /mnt/c/Users/PaulTalbot/Documents/sandbox/caravanserai
+→ Ruby not found. Installing via apt (sudo required)...
