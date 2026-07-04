@@ -3,19 +3,20 @@
 # Set eighty_sixed: true to strike through the price (86'd)
 # Set featured: true for a square brass outline (highlights priority items)
 # Set vegetarian: true on food items to show a green leaf beside the item name
+# Set spicy: true to show a red hot pepper beside the item name
 # Optional description: rendered in italics beneath the item name
 # Beverage pricing aligned with upscale café / hotel retail (2025–26 NYC benchmarks)
 title: Le Marché
 drinks:
-  - { name: Bottled Iced Tea, price: "$8", eighty_sixed: false, vegetarian: false }
-  - { name: Coca-Cola Products, price: "$7", eighty_sixed: false, vegetarian: false }
-  - { name: Nectar Cream Soda, price: "$9", eighty_sixed: false, featured: true, vegetarian: false }
-  - { name: Sparkling Water, price: "$8", eighty_sixed: false, vegetarian: false }
-  - { name: Still Water, price: "$6", eighty_sixed: false, vegetarian: false }
+  - { name: Bottled Iced Tea, price: "$8", eighty_sixed: false, vegetarian: false, spicy: false }
+  - { name: Coca-Cola Products, price: "$7", eighty_sixed: false, vegetarian: false, spicy: false }
+  - { name: Nectar Cream Soda, price: "$9", eighty_sixed: false, featured: true, vegetarian: false, spicy: false }
+  - { name: Sparkling Water, price: "$8", eighty_sixed: false, vegetarian: false, spicy: false }
+  - { name: Still Water, price: "$6", eighty_sixed: false, vegetarian: false, spicy: false }
 food:
-  - { name: Charleston Praline, price: "$8", eighty_sixed: false, vegetarian: true }
-  - { name: Cottage Cheese, price: "$6", eighty_sixed: false, vegetarian: true }
-  - { name: "Elmer's CheeWees", price: "$8", eighty_sixed: false, vegetarian: true }
-  - { name: Fruit Cru Parfait, price: "$16", eighty_sixed: false, featured: true, vegetarian: true }
-  - { name: "Hubig's Pie", price: "$8", eighty_sixed: false, vegetarian: true }
-  - { name: "Zapp's Chips", price: "$8", eighty_sixed: false, vegetarian: true }
+  - { name: Charleston Praline, price: "$8", eighty_sixed: false, vegetarian: true, spicy: false }
+  - { name: Cottage Cheese, price: "$6", eighty_sixed: false, vegetarian: true, spicy: false }
+  - { name: "Elmer's CheeWees", price: "$8", eighty_sixed: false, vegetarian: true, spicy: false }
+  - { name: Fruit Cru Parfait, price: "$16", eighty_sixed: false, featured: true, vegetarian: true, spicy: false }
+  - { name: "Hubig's Pie", price: "$8", eighty_sixed: false, vegetarian: true, spicy: false }
+  - { name: "Zapp's Chips", price: "$8", eighty_sixed: false, vegetarian: true, spicy: false }

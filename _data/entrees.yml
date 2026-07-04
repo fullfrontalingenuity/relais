@@ -2,6 +2,7 @@
 # Set eighty_sixed: true to strike through its price (86'd)
 # Set featured: true for a square brass outline (highlights priority items)
 # Set vegetarian: true to show a green leaf beside the item name
+# Set spicy: true to show a red hot pepper beside the item name
 # Optional description: rendered in italics beneath the item name
 title: Plats Principaux
 items:
@@ -10,30 +11,36 @@ items:
     eighty_sixed: false
     featured: true
     vegetarian: false
+    spicy: false
     description: "Brown-sugar and clove glazed ham, carved to order with tangy mustard sauce and a warm biscuit."
   - name: Cajun Jambalaya
     price: "$30"
     eighty_sixed: false
     vegetarian: false
+    spicy: true
     description: "Chicken, cubed pork, ham and andouille with the holy trinity, long-grain rice, and a rich, slow-simmered Creole tomato broth. Seafood-free"
   - name: "Debris Po'Boy"
     price: "$36"
     eighty_sixed: false
     featured: true
     vegetarian: false
+    spicy: false
     description: "Shredded roast beef debris in rich beef jus on French bread, dressed with lettuce, tomato, pickles, and mayonnaise."
   - name: "*Half Melon with Curried Chicken Salad"
     price: "$26"
     eighty_sixed: true
     vegetarian: false
+    spicy: false
     description: "Chilled half melon filled with curried chicken salad, toasted almonds, and golden raisins."
   - name: "Salad - Chef's"
     price: "$28"
     eighty_sixed: false
     vegetarian: false
+    spicy: false
     description: "Iceberg and romaine with smoked turkey, Virginia ham, Swiss, egg, tomato, and red wine vinaigrette."
   - name: Salad - Greek
     price: "$28"
     eighty_sixed: false
     vegetarian: true
+    spicy: false
     description: "Iceberg and romaine with tomato, cucumber, red onion, kalamata olives, pepperoncini, and crumbled feta with Greek dressing."

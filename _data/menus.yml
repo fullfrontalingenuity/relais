@@ -3,84 +3,85 @@
 # Set eighty_sixed: true on any item to strike through its price (86'd)
 # Set featured: true for a square brass outline (highlights priority items)
 # Set vegetarian: true to show a green leaf beside the item name
+# Set spicy: true to show a red hot pepper beside the item name
 # Optional description: rendered in italics beneath the item name
 
 monday:
   verdure:
     title: Plats du Jour
     items:
-      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true }
-      - { name: "Coney - Flint", price: "$9", eighty_sixed: false, featured: true, vegetarian: false }
-      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false }
-      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true }
+      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true, spicy: false }
+      - { name: "Coney - Flint", price: "$9", eighty_sixed: false, featured: true, vegetarian: false, spicy: false }
+      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false, spicy: false }
+      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true, spicy: false }
     dressings: "Bleu Cheese, Chez Relais, Greek, Goma, Red Wine Vinaigrette"
   potages:
     title: Potages du Jour
     items:
-      - { name: Chicken Noodle, price: "$15", eighty_sixed: false, vegetarian: false }
-      - { name: Parmentier, price: "$15", eighty_sixed: false, featured: true, vegetarian: true }
-      - { name: French Onion Gratinée, price: "$15", eighty_sixed: false, vegetarian: false }
+      - { name: Chicken Noodle, price: "$15", eighty_sixed: false, vegetarian: false, spicy: false }
+      - { name: Parmentier, price: "$15", eighty_sixed: false, featured: true, vegetarian: true, spicy: false }
+      - { name: French Onion Gratinée, price: "$15", eighty_sixed: false, vegetarian: false, spicy: false }
   tax_note: &tax_note "THE ABOVE PRICES DO NOT INCLUDE 6% STATE TAX OR 15% SERVICE FEE"
 
 tuesday:
   verdure:
     title: Plats du Jour
     items:
-      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true }
-      - { name: "Coney - Detroit", price: "$9", eighty_sixed: false, featured: true, vegetarian: false }
-      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false }
-      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true }
+      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true, spicy: false }
+      - { name: "Coney - Detroit", price: "$9", eighty_sixed: false, featured: true, vegetarian: false, spicy: false }
+      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false, spicy: false }
+      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true, spicy: false }
     dressings: "Bleu Cheese, Chez Relais, Greek, Goma, Red Wine Vinaigrette"
   potages:
     title: Potages du Jour
     items:
-      - { name: Avgolemono, price: "$15", eighty_sixed: false, vegetarian: false }
-      - { name: Parmentier, price: "$15", eighty_sixed: false, featured: true, vegetarian: true }
-      - { name: Creole Stuffed Pepper, price: "$15", eighty_sixed: false, vegetarian: false }
+      - { name: Avgolemono, price: "$15", eighty_sixed: false, vegetarian: false, spicy: false }
+      - { name: Parmentier, price: "$15", eighty_sixed: false, featured: true, vegetarian: true, spicy: false }
+      - { name: Creole Stuffed Pepper, price: "$15", eighty_sixed: false, vegetarian: false, spicy: true }
   tax_note: *tax_note
 
 wednesday:
   verdure:
     title: Plats du Jour
     items:
-      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true }
-      - { name: "Coney - Flint", price: "$9", eighty_sixed: false, featured: true, vegetarian: false }
-      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false }
-      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true }
+      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true, spicy: false }
+      - { name: "Coney - Flint", price: "$9", eighty_sixed: false, featured: true, vegetarian: false, spicy: false }
+      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false, spicy: false }
+      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true, spicy: false }
     dressings: "Bleu Cheese, Chez Relais, Greek, Goma, Red Wine Vinaigrette"
   potages:
     title: Potages du Jour
     items:
-      - { name: Avgolemono, price: "$15", eighty_sixed: false, vegetarian: false }
-      - { name: Parmentier, price: "$15", eighty_sixed: false, featured: true, vegetarian: true }
-      - { name: Creole Stuffed Pepper, price: "$15", eighty_sixed: false, vegetarian: false }
+      - { name: Avgolemono, price: "$15", eighty_sixed: false, vegetarian: false, spicy: false }
+      - { name: Parmentier, price: "$15", eighty_sixed: false, featured: true, vegetarian: true, spicy: false }
+      - { name: Creole Stuffed Pepper, price: "$15", eighty_sixed: false, vegetarian: false, spicy: true }
   tax_note: *tax_note
 
 thursday:
   verdure:
     title: Plats du Jour
     items:
-      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true }
-      - { name: "Coney - Detroit", price: "$9", eighty_sixed: false, featured: true, vegetarian: false }
-      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false }
-      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true }
+      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true, spicy: false }
+      - { name: "Coney - Detroit", price: "$9", eighty_sixed: false, featured: true, vegetarian: false, spicy: false }
+      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false, spicy: false }
+      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true, spicy: false }
     dressings: "Bleu Cheese, Chez Relais, Greek, Goma, Red Wine Vinaigrette"
   potages: &potages
     title: Potages du Jour
     items:
-      - { name: Chicken Noodle, price: "$15", eighty_sixed: false, vegetarian: false }
-      - { name: Parmentier, price: "$15", eighty_sixed: false, featured: true, vegetarian: true }
-      - { name: Creole Stuffed Pepper, price: "$15", eighty_sixed: false, vegetarian: false }
+      - { name: Chicken Noodle, price: "$15", eighty_sixed: false, vegetarian: false, spicy: false }
+      - { name: Parmentier, price: "$15", eighty_sixed: false, featured: true, vegetarian: true, spicy: false }
+      - { name: Creole Stuffed Pepper, price: "$15", eighty_sixed: false, vegetarian: false, spicy: true }
   tax_note: *tax_note
 
 friday:
   verdure:
     title: Plats du Jour
     items:
-      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true }
-      - { name: "Coney - Flint", price: "$9", eighty_sixed: false, featured: true, vegetarian: false }
-      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false }
-      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true }
+      - { name: Carrots Vichy, price: "$12", eighty_sixed: false, vegetarian: true, spicy: false }
+      - { name: "Coney - Flint", price: "$9", eighty_sixed: false, featured: true, vegetarian: false, spicy: false }
+      - { name: Green Beans with Bacon, price: "$12", eighty_sixed: true, vegetarian: false, spicy: false }
+      - { name: Seasonal Greens, price: "$16", eighty_sixed: false, vegetarian: true, spicy: false }
     dressings: "Bleu Cheese, Chez Relais, Greek, Goma, Red Wine Vinaigrette"
   potages: *potages
   tax_note: *tax_note

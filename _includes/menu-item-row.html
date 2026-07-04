@@ -3,7 +3,7 @@
     <div class="menu-item__grid">
       <div class="menu-item__detail">
         <span class="menu-item__name-line">
-          <span class="menu-item__name">{{ include.item.name | remove: "*" | strip }}</span>{% if include.item.vegetarian %} {% include menu-item-vegetarian-badge.html %}{% endif %}
+          <span class="menu-item__name">{{ include.item.name | remove: "*" | strip }}</span>{% if include.item.vegetarian %} {% include menu-item-vegetarian-badge.html %}{% endif %}{% if include.item.spicy %} {% include menu-item-spicy-badge.html %}{% endif %}
         </span>
         {% if include.item.description %}
         <span class="menu-item__description">{{ include.item.description }}</span>

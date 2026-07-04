@@ -8,7 +8,7 @@
   </div>
   <div class="menu-teaser__body">
     {% assign teaser_prefix = active.next | append: "-teaser" %}
-    {% include menu-render.html day=active.next id_prefix=teaser_prefix skip_marche=true skip_entrees=true skip_tax_note=true %}
+    {% include menu-render.html day=active.next id_prefix=teaser_prefix skip_marche=true skip_entrees=true %}
   </div>
 </section>
 {% endif %}
